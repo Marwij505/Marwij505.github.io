@@ -1,0 +1,1973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- =========================================================
+         BASIC DOCUMENT SETTINGS
+         ========================================================= -->
+
+    <!-- Defines the character encoding used by this webpage. -->
+    <meta charset="UTF-8">
+
+    <!--
+        Makes the layout responsive on mobile devices.
+        Without this, mobile browsers may render the page
+        as if it were a desktop website.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+        Short description used by search engines and link previews.
+        Keep this concise and professional.
+    -->
+    <meta
+        name="description"
+        content="Personal portfolio of Marcell Juniar Wijaya, an Informatics student at Universitas Esa Unggul with an interest in web development, backend development, and software engineering."
+    >
+
+    <!-- Helpful keywords describing the website content. -->
+    <meta
+        name="keywords"
+        content="Marcell Juniar Wijaya, Informatics Student, Web Developer, Laravel, Flask, Python, PHP, MySQL, Portfolio"
+    >
+
+    <!-- Identifies the author of the webpage. -->
+    <meta name="author" content="Marcell Juniar Wijaya">
+
+    <!-- Browser tab title. -->
+    <title>Marcell Juniar Wijaya | Portfolio</title>
+
+
+    <!-- =========================================================
+         GOOGLE FONT
+         ========================================================= -->
+
+    <!--
+        Preconnect allows the browser to prepare the connection
+        to Google Fonts before downloading the font files.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!--
+        Inter is a clean and highly readable font that works well
+        for professional portfolio websites.
+    -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =========================================================
+         WEBSITE STYLESHEET
+         ========================================================= -->
+
+    <!-- Connects this HTML file to our CSS file. -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+
+    <!-- =========================================================
+         HEADER / NAVIGATION
+         =========================================================
+         
+         This navigation stays at the top of the website.
+         Later, CSS will make it sticky/fixed.
+         
+         Each navigation link points to a section ID.
+         
+         Example:
+         href="#projects"
+                 ↓
+         <section id="projects">
+    -->
+
+    <header class="site-header" id="site-header">
+
+        <nav class="navbar container" aria-label="Primary navigation">
+
+            <!-- =========================
+                 WEBSITE BRAND / LOGO
+                 ========================= -->
+
+            <a href="#home" class="brand" aria-label="Go to home section">
+
+                <!-- Initial-based logo. -->
+                <span class="brand-logo">MJ</span>
+
+                <!-- Full name beside the logo. -->
+                <span class="brand-name">
+                    Marcell Juniar Wijaya
+                </span>
+
+            </a>
+
+
+            <!-- =========================
+                 DESKTOP NAVIGATION LINKS
+                 ========================= -->
+
+            <ul class="nav-menu" id="nav-menu">
+
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">
+                        Skills
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">
+                        Projects
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">
+                        Education
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- =========================
+                 NAVIGATION ACTIONS
+                 ========================= -->
+
+            <div class="nav-actions">
+
+                <!--
+                    Dark / Light Mode Button
+
+                    The actual theme switching will be handled
+                    later using JavaScript.
+                -->
+                <button
+                    type="button"
+                    class="theme-toggle"
+                    id="theme-toggle"
+                    aria-label="Switch between light and dark mode"
+                >
+                    <span class="theme-icon" aria-hidden="true">
+                        ◐
+                    </span>
+                </button>
+
+
+                <!--
+                    Main contact call-to-action.
+
+                    This simply scrolls down to the Contact section.
+                -->
+                <a href="#contact" class="btn btn-primary nav-contact-btn">
+                    Let's Connect
+                </a>
+
+
+                <!--
+                    Mobile Menu Button
+
+                    Hidden on desktop through CSS.
+                    It will open and close the navigation menu
+                    on mobile screens using JavaScript.
+                -->
+                <button
+                    type="button"
+                    class="mobile-menu-toggle"
+                    id="mobile-menu-toggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="nav-menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================================================
+         MAIN WEBSITE CONTENT
+         ========================================================= -->
+
+    <main>
+
+
+        <!-- =====================================================
+             HOME / HERO SECTION
+             =====================================================
+             
+             This is the first section recruiters see.
+             
+             Main objectives:
+             - Introduce who Marcell is
+             - Explain the target profession
+             - Provide links to projects and CV
+             - Show professional social links
+        -->
+
+        <section class="hero section" id="home">
+
+            <div class="hero-container container">
+
+
+                <!-- =========================
+                     HERO LEFT SIDE
+                     ========================= -->
+
+                <div class="hero-content">
+
+                    <!-- Small introduction badge. -->
+                    <span class="hero-badge">
+                        👋 Hello, I'm
+                    </span>
+
+
+                    <!-- Main name / H1.
+                         There should normally only be one H1
+                         on the page. -->
+                    <h1 class="hero-title">
+                        Marcell Juniar Wijaya
+                    </h1>
+
+
+                    <!-- Professional position / identity. -->
+                    <h2 class="hero-subtitle">
+                        Informatics Student &
+                        <span>Aspiring Web Developer</span>
+                    </h2>
+
+
+                    <!-- Short professional introduction. -->
+                    <p class="hero-description">
+                        An Informatics undergraduate at Universitas Esa Unggul
+                        with an interest in web development, backend development,
+                        database systems, and building useful digital solutions.
+                    </p>
+
+
+                    <!-- =========================
+                         HERO CALL-TO-ACTION BUTTONS
+                         ========================= -->
+
+                    <div class="hero-actions">
+
+                        <!-- Scrolls to project section. -->
+                        <a href="#projects" class="btn btn-primary">
+
+                            <span>
+                                View Projects
+                            </span>
+
+                            <span aria-hidden="true">
+                                →
+                            </span>
+
+                        </a>
+
+
+                        <!--
+                            Opens CV PDF in a new browser tab.
+
+                            We use target="_blank" so the recruiter
+                            does not leave the portfolio website.
+                        -->
+                        <a
+                            href="assets/cv/Marcell_Juniar_Wijaya_CV.pdf"
+                            class="btn btn-secondary"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span>
+                                Hire Me
+                            </span>
+
+                            <span aria-hidden="true">
+                                ↓
+                            </span>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- =========================
+                         SOCIAL LINKS
+                         ========================= -->
+
+                    <div class="hero-socials">
+
+                        <!-- GitHub -->
+                        <a
+                            href="https://github.com/Marwij505"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="social-link"
+                            aria-label="Visit Marcell's GitHub profile"
+                        >
+                            GitHub
+                        </a>
+
+
+                        <!-- LinkedIn -->
+                        <a
+                            href="https://www.linkedin.com/in/marcell-wijaya/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="social-link"
+                            aria-label="Visit Marcell's LinkedIn profile"
+                        >
+                            LinkedIn
+                        </a>
+
+
+                        <!-- Email -->
+                        <a
+                            href="mailto:marcelljuniar5@gmail.com"
+                            class="social-link"
+                            aria-label="Send an email to Marcell"
+                        >
+                            Email
+                        </a>
+
+                    </div>
+
+
+                    <!-- Current location. -->
+                    <p class="hero-location">
+                        <span aria-hidden="true">📍</span>
+                        Bekasi, West Java, Indonesia
+                    </p>
+
+                </div>
+
+
+
+                <!-- =========================
+                     HERO RIGHT SIDE / PROFILE
+                     ========================= -->
+
+                <div class="hero-visual">
+
+                    <!-- Decorative visual background.
+                         aria-hidden prevents screen readers
+                         from reading decorative elements. -->
+                    <div
+                        class="hero-decoration hero-decoration-one"
+                        aria-hidden="true"
+                    ></div>
+
+                    <div
+                        class="hero-decoration hero-decoration-two"
+                        aria-hidden="true"
+                    ></div>
+
+
+                    <!-- Main profile image container. -->
+                    <div class="profile-card">
+
+                        <img
+                            src="assets/images/profile/marcell-profile.png"
+                            alt="Portrait of Marcell Juniar Wijaya"
+                            class="profile-image"
+                        >
+
+                    </div>
+
+
+                    <!--
+                        Small professional status card.
+                        This will later float beside the image.
+                    -->
+                    <div class="availability-card">
+
+                        <span
+                            class="availability-dot"
+                            aria-hidden="true"
+                        ></span>
+
+                        <div>
+                            <span class="availability-label">
+                                Currently
+                            </span>
+
+                            <strong>
+                                Open to Internship Opportunities
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             ABOUT SECTION
+             ===================================================== -->
+
+        <section class="about section" id="about">
+
+            <div class="container">
+
+
+                <!-- Standard section heading shared by sections. -->
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        About
+                    </span>
+
+                    <h2>
+                        About Me
+                    </h2>
+
+                    <p>
+                        A short introduction about my background,
+                        interests, and professional goals.
+                    </p>
+
+                </div>
+
+
+
+                <div class="about-layout">
+
+
+                    <!-- =========================
+                         ABOUT DESCRIPTION
+                         ========================= -->
+
+                    <div class="about-content">
+
+                        <p>
+                            I'm an Informatics undergraduate at Universitas
+                            Esa Unggul with hands-on experience developing
+                            academic web applications using Laravel, Flask,
+                            PHP, Python, MySQL, HTML, CSS, and JavaScript.
+                        </p>
+
+                        <p>
+                            I enjoy learning new technologies, solving
+                            practical problems, and turning ideas into
+                            functional applications. I am currently seeking
+                            an internship opportunity where I can apply my
+                            technical knowledge while gaining professional
+                            industry experience.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- =========================
+                         QUICK INFORMATION CARDS
+                         =========================
+                         
+                         These are more useful than generic statements like:
+                         "Hard Worker" or "Team Player".
+                    -->
+
+                    <div class="about-info">
+
+                        <article class="info-card">
+
+                            <span class="info-icon" aria-hidden="true">
+                                🎓
+                            </span>
+
+                            <div>
+                                <span class="info-label">
+                                    Current Semester
+                                </span>
+
+                                <strong>
+                                    Semester 5
+                                </strong>
+                            </div>
+
+                        </article>
+
+
+                        <article class="info-card">
+
+                            <span class="info-icon" aria-hidden="true">
+                                📍
+                            </span>
+
+                            <div>
+                                <span class="info-label">
+                                    Location
+                                </span>
+
+                                <strong>
+                                    Bekasi, Indonesia
+                                </strong>
+                            </div>
+
+                        </article>
+
+
+                        <article class="info-card">
+
+                            <span class="info-icon" aria-hidden="true">
+                                💼
+                            </span>
+
+                            <div>
+                                <span class="info-label">
+                                    Status
+                                </span>
+
+                                <strong>
+                                    Open for Internship
+                                </strong>
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             TECHNICAL SKILLS SECTION
+             =====================================================
+             
+             The actual SVG icons already exist inside:
+             assets/images/icons/
+        -->
+
+        <section class="skills section" id="skills">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        Skills
+                    </span>
+
+                    <h2>
+                        Technologies I Work With
+                    </h2>
+
+                    <p>
+                        Technologies and development tools I have used
+                        in academic and personal projects.
+                    </p>
+
+                </div>
+
+
+
+                <!-- =========================
+                     SKILLS GRID
+                     ========================= -->
+
+                <div class="skills-grid">
+
+
+                    <!-- Laravel -->
+                    <article class="skill-card">
+
+                        <img
+                            src="assets/images/icons/Laravel.svg"
+                            alt=""
+                            class="skill-icon"
+                            aria-hidden="true"
+                        >
+
+                        <span>
+                            Laravel
+                        </span>
+
+                    </article>
+
+
+                    <!-- Flask -->
+                    <article class="skill-card">
+
+                        <img
+                            src="assets/images/icons/Flask.svg"
+                            alt=""
+                            class="skill-icon"
+                            aria-hidden="true"
+                        >
+
+                        <span>
+                            Flask
+                        </span>
+
+                    </article>
+
+
+                    <!-- PHP -->
+                    <article class="skill-card">
+
+                        <img
+                            src="assets/images/icons/PHP.svg"
+                            alt=""
+                            class="skill-icon"
+                            aria-hidden="true"
+                        >
+
+                        <span>
+                            PHP
+                        </span>
+
+                    </article>
+
+
+                    <!-- Python -->
+                    <article class="skill-card">
+
+                        <img
+                            src="assets/images/icons/Python.svg"
+                            alt=""
+                            class="skill-icon"
+                            aria-hidden="true"
+                        >
+
+                        <span>
+                            Python
+                        </span>
+
+                    </article>
+
+
+                    <!-- MySQL -->
+                    <article class="skill-card">
+
+                        <img
+                            src="assets/images/icons/MySQL.svg"
+                            alt=""
+                            class="skill-icon"
+                            aria-hidden="true"
+                        >
+
+                        <span>
+                            MySQL
+                        </span>
+
+                    </article>
+
+
+                    <!-- HTML -->
+                    <article class="skill-card">
+
+                        <img
+                            src="assets/images/icons/HTML5.svg"
+                            alt=""
+                            class="skill-icon"
+                            aria-hidden="true"
+                        >
+
+                        <span>
+                            HTML5
+                        </span>
+
+                    </article>
+
+
+                    <!-- CSS -->
+                    <article class="skill-card">
+
+                        <img
+                            src="assets/images/icons/CSS3.svg"
+                            alt=""
+                            class="skill-icon"
+                            aria-hidden="true"
+                        >
+
+                        <span>
+                            CSS3
+                        </span>
+
+                    </article>
+
+
+                    <!-- JavaScript -->
+                    <article class="skill-card">
+
+                        <img
+                            src="assets/images/icons/JavaScript.svg"
+                            alt=""
+                            class="skill-icon"
+                            aria-hidden="true"
+                        >
+
+                        <span>
+                            JavaScript
+                        </span>
+
+                    </article>
+
+
+                    <!-- Git -->
+                    <article class="skill-card">
+
+                        <img
+                            src="assets/images/icons/Git.svg"
+                            alt=""
+                            class="skill-icon"
+                            aria-hidden="true"
+                        >
+
+                        <span>
+                            Git
+                        </span>
+
+                    </article>
+
+
+                    <!-- GitHub -->
+                    <article class="skill-card">
+
+                        <img
+                            src="assets/images/icons/GitHub.svg"
+                            alt=""
+                            class="skill-icon"
+                            aria-hidden="true"
+                        >
+
+                        <span>
+                            GitHub
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             PROJECTS SECTION
+             =====================================================
+             
+             This is the most important portfolio section.
+             
+             Each project contains:
+             - Screenshot
+             - Project name
+             - Description
+             - Technology tags
+             - GitHub repository link
+             - "View Details" button
+             
+             Later JavaScript will make View Details open a modal.
+        -->
+
+        <section class="projects section" id="projects">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        Projects
+                    </span>
+
+                    <h2>
+                        Featured Projects
+                    </h2>
+
+                    <p>
+                        A selection of academic projects that demonstrate
+                        my experience in web development and database-driven
+                        applications.
+                    </p>
+
+                </div>
+
+
+
+                <div class="projects-grid">
+
+
+                    <!-- =================================================
+                         PROJECT 01 — FLOWLIST
+                         ================================================= -->
+
+                    <article class="project-card">
+
+                        <!-- Project screenshot. -->
+                        <div class="project-image-wrapper">
+
+                            <img
+                                src="assets/images/projects/flowlist-dashboard.png"
+                                alt="Flowlist task management dashboard"
+                                class="project-image"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+
+                        <!-- Project content. -->
+                        <div class="project-content">
+
+                            <span class="project-type">
+                                Task Management Web Application
+                            </span>
+
+
+                            <h3 class="project-title">
+                                Flowlist
+                            </h3>
+
+
+                            <p class="project-description">
+                                A task management web application featuring
+                                authentication, task CRUD operations, dashboard,
+                                calendar, statistics, and user management
+                                functionality.
+                            </p>
+
+
+                            <!-- Technology badges. -->
+                            <div
+                                class="project-technologies"
+                                aria-label="Flowlist technologies"
+                            >
+
+                                <span class="tech-tag">
+                                    Laravel
+                                </span>
+
+                                <span class="tech-tag">
+                                    MySQL
+                                </span>
+
+                                <span class="tech-tag">
+                                    Blade
+                                </span>
+
+                            </div>
+
+
+                            <!-- Project links. -->
+                            <div class="project-actions">
+
+                                <a
+                                    href="https://github.com/Marwij505/task_management_laravel"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="project-link"
+                                >
+                                    GitHub
+                                    <span aria-hidden="true">↗</span>
+                                </a>
+
+
+                                <!--
+                                    JavaScript will later connect this button
+                                    to the Flowlist project modal.
+                                -->
+                                <button
+                                    type="button"
+                                    class="project-details-button"
+                                    data-project="flowlist"
+                                >
+                                    View Details
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         PROJECT 02 — COMPASS CAMPUS
+                         ================================================= -->
+
+                    <article class="project-card">
+
+                        <div class="project-image-wrapper">
+
+                            <img
+                                src="assets/images/projects/compass-home.png"
+                                alt="Compass Campus educational help desk homepage"
+                                class="project-image"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-type">
+                                Educational Help Desk Platform
+                            </span>
+
+
+                            <h3 class="project-title">
+                                Compass Campus
+                            </h3>
+
+
+                            <p class="project-description">
+                                An educational web platform designed to help
+                                students explore universities, study programs,
+                                interests, and academic recommendations.
+                            </p>
+
+
+                            <div
+                                class="project-technologies"
+                                aria-label="Compass Campus technologies"
+                            >
+
+                                <span class="tech-tag">
+                                    Python
+                                </span>
+
+                                <span class="tech-tag">
+                                    Flask
+                                </span>
+
+                                <span class="tech-tag">
+                                    MySQL
+                                </span>
+
+                            </div>
+
+
+                            <div class="project-actions">
+
+                                <a
+                                    href="https://github.com/Marwij505/help_desk"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="project-link"
+                                >
+                                    GitHub
+                                    <span aria-hidden="true">↗</span>
+                                </a>
+
+
+                                <button
+                                    type="button"
+                                    class="project-details-button"
+                                    data-project="compass"
+                                >
+                                    View Details
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         PROJECT 03 — BAKERY STORE
+                         ================================================= -->
+
+                    <article class="project-card">
+
+                        <div class="project-image-wrapper">
+
+                            <img
+                                src="assets/images/projects/bakery-dashboard.png"
+                                alt="Bakery Store management dashboard"
+                                class="project-image"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-type">
+                                Store Management Web Application
+                            </span>
+
+
+                            <h3 class="project-title">
+                                Bakery Store
+                            </h3>
+
+
+                            <p class="project-description">
+                                A database-driven store management web
+                                application featuring authentication,
+                                role-based access, product management,
+                                dashboards, and MySQL integration.
+                            </p>
+
+
+                            <div
+                                class="project-technologies"
+                                aria-label="Bakery Store technologies"
+                            >
+
+                                <span class="tech-tag">
+                                    Python
+                                </span>
+
+                                <span class="tech-tag">
+                                    Flask
+                                </span>
+
+                                <span class="tech-tag">
+                                    MySQL
+                                </span>
+
+                            </div>
+
+
+                            <div class="project-actions">
+
+                                <a
+                                    href="https://github.com/Marwij505/bakery_store"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="project-link"
+                                >
+                                    GitHub
+                                    <span aria-hidden="true">↗</span>
+                                </a>
+
+
+                                <button
+                                    type="button"
+                                    class="project-details-button"
+                                    data-project="bakery"
+                                >
+                                    View Details
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             EDUCATION SECTION
+             ===================================================== -->
+
+        <section class="education section" id="education">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        Education
+                    </span>
+
+                    <h2>
+                        Academic Background
+                    </h2>
+
+                    <p>
+                        My current university education and previous
+                        professional flight training.
+                    </p>
+
+                </div>
+
+
+
+                <div class="education-grid">
+
+
+                    <!-- =================================================
+                         UNIVERSITAS ESA UNGGUL
+                         ================================================= -->
+
+                    <article class="education-card">
+
+                        <div class="education-logo-wrapper">
+
+                            <img
+                                src="assets/images/education/esa-unggul-logo.png"
+                                alt="Universitas Esa Unggul logo"
+                                class="education-logo"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+
+                        <div class="education-content">
+
+                            <div class="education-header">
+
+                                <div>
+
+                                    <span class="education-status">
+                                        Ongoing
+                                    </span>
+
+                                    <h3>
+                                        Universitas Esa Unggul
+                                    </h3>
+
+                                </div>
+
+
+                                <span class="education-date">
+                                    2024 — Present
+                                </span>
+
+                            </div>
+
+
+                            <p class="education-program">
+                                Bachelor's Degree in Informatics
+                            </p>
+
+
+                            <div class="education-details">
+
+                                <div class="education-detail">
+
+                                    <span>
+                                        GPA
+                                    </span>
+
+                                    <strong>
+                                        3.88 / 4.00
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="education-detail">
+
+                                    <span>
+                                        Current Semester
+                                    </span>
+
+                                    <strong>
+                                        Semester 5
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="education-detail">
+
+                                    <span>
+                                        Location
+                                    </span>
+
+                                    <strong>
+                                        Bekasi, Indonesia
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         BALI INTERNATIONAL FLIGHT ACADEMY
+                         ================================================= -->
+
+                    <article class="education-card secondary-training">
+
+                        <div class="education-logo-wrapper">
+
+                            <img
+                                src="assets/images/education/bifa-logo.png"
+                                alt="Bali International Flight Academy logo"
+                                class="education-logo"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+
+                        <div class="education-content">
+
+                            <div class="education-header">
+
+                                <div>
+
+                                    <span class="education-status completed">
+                                        Completed
+                                    </span>
+
+                                    <h3>
+                                        Bali International Flight Academy
+                                    </h3>
+
+                                </div>
+
+
+                                <span class="education-date">
+                                    Jun 2022 — Sep 2023
+                                </span>
+
+                            </div>
+
+
+                            <p class="education-program">
+                                Student Pilot — Additional Training
+                            </p>
+
+
+                            <p class="education-description">
+                                Completed structured professional flight
+                                training that developed discipline,
+                                situational awareness, decision-making,
+                                communication, and attention to detail.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CONTACT SECTION
+             ===================================================== -->
+
+        <section class="contact section" id="contact">
+
+            <div class="container">
+
+
+                <div class="contact-card">
+
+
+                    <!-- =========================
+                         CONTACT MESSAGE
+                         ========================= -->
+
+                    <div class="contact-content">
+
+                        <span class="section-label">
+                            Contact
+                        </span>
+
+
+                        <h2>
+                            Let's Connect
+                        </h2>
+
+
+                        <p>
+                            I'm open to internship opportunities,
+                            collaborations, and conversations about
+                            technology and software development.
+                        </p>
+
+
+                        <a
+                            href="mailto:marcelljuniar5@gmail.com"
+                            class="btn btn-primary"
+                        >
+                            Send Me an Email
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- =========================
+                         CONTACT LINKS
+                         ========================= -->
+
+                    <div class="contact-links">
+
+
+                        <!-- Email -->
+                        <a
+                            href="mailto:marcelljuniar5@gmail.com"
+                            class="contact-link-card"
+                        >
+
+                            <span class="contact-link-label">
+                                Email
+                            </span>
+
+                            <strong>
+                                marcelljuniar5@gmail.com
+                            </strong>
+
+                        </a>
+
+
+                        <!-- GitHub -->
+                        <a
+                            href="https://github.com/Marwij505"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-link-card"
+                        >
+
+                            <span class="contact-link-label">
+                                GitHub
+                            </span>
+
+                            <strong>
+                                github.com/Marwij505
+                            </strong>
+
+                        </a>
+
+
+                        <!-- LinkedIn -->
+                        <a
+                            href="https://www.linkedin.com/in/marcell-wijaya/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-link-card"
+                        >
+
+                            <span class="contact-link-label">
+                                LinkedIn
+                            </span>
+
+                            <strong>
+                                linkedin.com/in/marcell-wijaya
+                            </strong>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================================
+         FOOTER
+         ========================================================= -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container container">
+
+
+            <!-- Footer identity. -->
+            <div class="footer-brand">
+
+                <a href="#home" class="brand">
+
+                    <span class="brand-logo">
+                        MJ
+                    </span>
+
+
+                    <div class="footer-brand-text">
+
+                        <strong>
+                            Marcell Juniar Wijaya
+                        </strong>
+
+                        <span>
+                            Informatics Student & Aspiring Web Developer
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- Footer navigation. -->
+            <nav
+                class="footer-navigation"
+                aria-label="Footer navigation"
+            >
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#skills">
+                    Skills
+                </a>
+
+                <a href="#projects">
+                    Projects
+                </a>
+
+                <a href="#education">
+                    Education
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </nav>
+
+
+
+            <!-- Copyright information. -->
+            <div class="footer-copyright">
+
+                <p>
+                    © <span id="current-year">2026</span>
+                    Marcell Juniar Wijaya.
+                </p>
+
+                <p>
+                    Hosted on GitHub Pages.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================================================
+         BACK TO TOP BUTTON
+         =========================================================
+         
+         Hidden initially through CSS.
+         JavaScript will show this button after the visitor scrolls
+         down the website.
+    -->
+
+    <a
+        href="#home"
+        class="back-to-top"
+        id="back-to-top"
+        aria-label="Back to top"
+    >
+        ↑
+    </a>
+
+
+
+    <!-- =========================================================
+         PROJECT MODALS
+         =========================================================
+         
+         These dialog elements are hidden by default.
+         
+         Later, JavaScript will connect:
+         
+         View Details
+              ↓
+         specific project modal opens
+         
+         This allows us to keep the entire portfolio inside
+         ONE webpage without creating separate project pages.
+    -->
+
+
+    <!-- =========================================================
+         FLOWLIST MODAL
+         ========================================================= -->
+
+    <dialog class="project-modal" id="flowlist-modal">
+
+        <div class="modal-container">
+
+            <!-- Modal header. -->
+            <div class="modal-header">
+
+                <div>
+
+                    <span class="project-type">
+                        Task Management Web Application
+                    </span>
+
+                    <h2>
+                        Flowlist
+                    </h2>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="modal-close"
+                    aria-label="Close Flowlist project details"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+
+            <!-- Modal project description. -->
+            <div class="modal-body">
+
+                <p>
+                    Flowlist is a task management web application built
+                    using Laravel and MySQL. It provides users with tools
+                    for managing tasks, schedules, dashboard information,
+                    statistics, and account-related functionality.
+                </p>
+
+
+                <!-- Project feature list. -->
+                <div class="modal-section">
+
+                    <h3>
+                        Main Features
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            User authentication
+                        </li>
+
+                        <li>
+                            Task creation, updating, and deletion
+                        </li>
+
+                        <li>
+                            Dashboard and task statistics
+                        </li>
+
+                        <li>
+                            Calendar view
+                        </li>
+
+                        <li>
+                            User profile management
+                        </li>
+
+                        <li>
+                            Administrative user management
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Project screenshot gallery. -->
+                <div class="modal-section">
+
+                    <h3>
+                        Project Screenshots
+                    </h3>
+
+
+                    <div class="project-gallery">
+
+                        <img
+                            src="assets/images/projects/flowlist-home.png"
+                            alt="Flowlist homepage"
+                            loading="lazy"
+                        >
+
+                        <img
+                            src="assets/images/projects/flowlist-dashboard.png"
+                            alt="Flowlist dashboard"
+                            loading="lazy"
+                        >
+
+                        <img
+                            src="assets/images/projects/flowlist-tasks.png"
+                            alt="Flowlist task list"
+                            loading="lazy"
+                        >
+
+                        <img
+                            src="assets/images/projects/flowlist-calendar.png"
+                            alt="Flowlist calendar"
+                            loading="lazy"
+                        >
+
+                        <img
+                            src="assets/images/projects/flowlist-admin.png"
+                            alt="Flowlist administrator dashboard"
+                            loading="lazy"
+                        >
+
+                        <img
+                            src="assets/images/projects/flowlist-users.png"
+                            alt="Flowlist user management"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Repository link. -->
+                <a
+                    href="https://github.com/Marwij505/task_management_laravel"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary"
+                >
+                    View GitHub Repository
+                    <span aria-hidden="true">↗</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </dialog>
+
+
+
+    <!-- =========================================================
+         COMPASS CAMPUS MODAL
+         ========================================================= -->
+
+    <dialog class="project-modal" id="compass-modal">
+
+        <div class="modal-container">
+
+            <div class="modal-header">
+
+                <div>
+
+                    <span class="project-type">
+                        Educational Help Desk Platform
+                    </span>
+
+                    <h2>
+                        Compass Campus
+                    </h2>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="modal-close"
+                    aria-label="Close Compass Campus project details"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <div class="modal-body">
+
+                <p>
+                    Compass Campus is an educational help desk platform
+                    developed to help students explore universities,
+                    study programs, interests, and educational
+                    recommendations through a web-based experience.
+                </p>
+
+
+                <div class="modal-section">
+
+                    <h3>
+                        Main Features
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            University and study program exploration
+                        </li>
+
+                        <li>
+                            Student interest-based information
+                        </li>
+
+                        <li>
+                            Educational recommendation interface
+                        </li>
+
+                        <li>
+                            Flask backend integration
+                        </li>
+
+                        <li>
+                            MySQL database integration
+                        </li>
+
+                        <li>
+                            Responsive web interface
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="modal-section">
+
+                    <h3>
+                        Project Screenshots
+                    </h3>
+
+
+                    <div class="project-gallery">
+
+                        <img
+                            src="assets/images/projects/compass-home.png"
+                            alt="Compass Campus homepage"
+                            loading="lazy"
+                        >
+
+                        <img
+                            src="assets/images/projects/compass-form.png"
+                            alt="Compass Campus questionnaire"
+                            loading="lazy"
+                        >
+
+                        <img
+                            src="assets/images/projects/compass-result.png"
+                            alt="Compass Campus user interface"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <a
+                    href="https://github.com/Marwij505/help_desk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary"
+                >
+                    View GitHub Repository
+                    <span aria-hidden="true">↗</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </dialog>
+
+
+
+    <!-- =========================================================
+         BAKERY STORE MODAL
+         ========================================================= -->
+
+    <dialog class="project-modal" id="bakery-modal">
+
+        <div class="modal-container">
+
+            <div class="modal-header">
+
+                <div>
+
+                    <span class="project-type">
+                        Store Management Web Application
+                    </span>
+
+                    <h2>
+                        Bakery Store
+                    </h2>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="modal-close"
+                    aria-label="Close Bakery Store project details"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <div class="modal-body">
+
+                <p>
+                    Bakery Store is a database-driven store management
+                    application developed using Python Flask and MySQL.
+                    The system includes authentication, role-based access,
+                    product management, and administrative functionality.
+                </p>
+
+
+                <div class="modal-section">
+
+                    <h3>
+                        Main Features
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            User authentication and registration
+                        </li>
+
+                        <li>
+                            Session management
+                        </li>
+
+                        <li>
+                            Role-based user access
+                        </li>
+
+                        <li>
+                            Product management
+                        </li>
+
+                        <li>
+                            Management dashboard
+                        </li>
+
+                        <li>
+                            MySQL database integration
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="modal-section">
+
+                    <h3>
+                        Project Screenshots
+                    </h3>
+
+
+                    <div class="project-gallery">
+
+                        <img
+                            src="assets/images/projects/bakery-dashboard.png"
+                            alt="Bakery Store executive dashboard"
+                            loading="lazy"
+                        >
+
+                        <img
+                            src="assets/images/projects/bakery-products.png"
+                            alt="Bakery Store product management page"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <a
+                    href="https://github.com/Marwij505/bakery_store"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary"
+                >
+                    View GitHub Repository
+                    <span aria-hidden="true">↗</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </dialog>
+
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+         =========================================================
+         
+         "defer" means:
+         
+         1. Browser downloads JavaScript while HTML is loading.
+         2. JavaScript runs only after HTML has finished parsing.
+         
+         This is safer than putting JavaScript in the <head>
+         without defer.
+    -->
+
+    <script src="js/script.js" defer></script>
+
+</body>
+
+</html>
